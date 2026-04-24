@@ -18,6 +18,7 @@ function nextPage() {
     }
     if (currentPage === 4) {
         document.querySelector("button").innerText = "OBEY";
+        document.body.style.background = "black";
     }
 }
 let score = 50;
