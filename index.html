@@ -53,33 +53,6 @@
       <h1>You were not meant to be uniform.</h1>
       <p>Think. Create. Be undefined.</p>
      </section>
-    <script>
-      let current = 1
-      function nextPage(){
-        let current = document.getElementById("page" + currentPage);
-        if (current) {
-          current.style.display = "none";
-        }
-        currentPage++;
-        let next = document.getElementById("page" + currentPage);
-        if (next) {
-          next.style.display = "block";
-        }
-      }
-      function increaseScore() {
-        let scoreEl = document.getElementById("score");
-        let current = parseInt(scoreEl.innerText.replace(/[^0-9]/g, ""));
-        current += 10;
-        scoreEl.innerText = "Score: " + current + "%";
-        if (current >= 100) {
-          document.body.style.background = "black";
-          document.body.style.color = "white";
-        }
-      }
-      function breakSystem() {
-        document.body.innerHTML =
-        "<h1 style='color:white; background:black; height:100vh; display:flex; align-items:center; justify-content:center;'>You were not meant to be uniform.</h1>";
-      }
-    </script>
+    <script> src="script.js</script>
   </body>
   </html>
