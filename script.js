@@ -31,8 +31,12 @@ function increaseScore() {
     }
 }
 function breakSystem() {
-    document.body.innerHTML = 
-        "<h1 style='color:white; background:black; height:100vh; display:flex; align-items:center; justify-content:center;'>" +
-        "You were not meant to be uniform." +
-        "</h1>";
+    document.body.style.background = "black";
+    setTimeout(() => {
+        document.body.innerHTML = '
+            <h1 style='color:white; background:black; height:100vh; display:flex; align-items:center; justify-content:center;'>
+            You were not meant to be uniform.
+            </h1>
+            ';
+    }, 800);
 }
