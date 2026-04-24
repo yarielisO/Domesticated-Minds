@@ -1,4 +1,3 @@
-alert("JS IS RUNNING");
 let currentPage = 1;
 function nextPage() {
     document.getElementById("page" + currentPage).classList.remove("active");
