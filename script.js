@@ -18,19 +18,18 @@ function nextPage() {
         document.querySelector("button").innerText = "OBEY";
     }
 }
-    let score = 50;
-    function increaseScore() {
-        score += 10;
-        document.getElementById("score").innerText = "Score: " + score + "%";
-        if (score >= 100) {
-            document.body.style.background = "black";
-            document.body.style.color = "white";
-        }
+let score = 50;
+function increaseScore() {
+    score += 10;
+    document.getElementById("score").innerText = "Score: " + score + "%";
+    if (score >= 100) {
+        document.body.style.background = "black";
+        document.body.style.color = "white";
     }
-    function breakSystem() {
-        document.body.innerHTML = 
+}
+function breakSystem() {
+    document.body.innerHTML = 
         "<h1 style='color:white; background:black; height:100vh; display:flex; align-items:center; justify-content:center;'>" +
         "You were not meant to be uniform." +
         "</h1>";
-    }
 }
