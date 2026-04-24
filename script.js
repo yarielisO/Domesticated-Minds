@@ -6,6 +6,9 @@ function nextPage() {
     if (next) {
         next.classList.add("active");
     }
+    if (currentPage === 2) {
+        document.querySelector(".hidden").classList.add("show");
+    }
     if (currentPage === 3) {
         let unique = document.querySelector(".unique");
         setTimeout(() => {
