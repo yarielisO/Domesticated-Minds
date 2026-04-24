@@ -16,7 +16,6 @@ body {
 .active {
   display: block;
 }
-/* Buttons */
 button {
   padding: 10px 20px;
   margin-top: 20px;
@@ -24,7 +23,6 @@ button {
   position: relative;
   z-index: 9999;
 }
-/* Progress bar */
 .bar {
   width: 0%;
   height: 20px;
@@ -32,7 +30,6 @@ button {
   margin: 20px auto;
   transition: width 2s;
 }
-/* GLITCH PAGE */
 .glitch {
   background: black;
   color: red;
@@ -46,7 +43,6 @@ button {
   50% { transform: translate(-2px, 0);}
   100% { transform: translate(2px, 0);}
 }
-/* FINAL PAGE */
 .final {
   background: #111;
   color: white;
