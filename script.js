@@ -1,4 +1,3 @@
-alert("CONNECTED")
 let currentPage = 1;
 function nextPage() {
     document.getElementById("page" + currentPage).classList.remove("active");
@@ -7,7 +6,6 @@ function nextPage() {
     if (next) {
         next.classList.add("active");
     }
-    // Animate progress bar on page 3
     if (currentPage === 3) {
         let unique = document.querySelector(".unique");
         setTimeout(() => {
