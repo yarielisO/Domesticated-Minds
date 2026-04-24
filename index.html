@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Domesticated Minds</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- PAGE 1 -->
+     <section class="page active" id="page1">
+      <h1>Welcome, Student</h1>
+      <p>Follow the path to success.</p>
+      <button onclick="nextPage()">Begin</button>
+     </section>
+    <!-- PAGE 2 -->
+     <section class="page" id="page2">
+      <h1>The Ideal Student</h1>
+      <ul>
+        <li>✔️ Quiet</li>
+        <li>✔️ Obedient</li>
+        <li>✔️ Efficient</li>
+        <li>✔️ Productive</li>
+      </ul>
+      <button onclick="nextPage()">Continue</button>
+      <div class="students">
+        <div class="student"></div>
+        <div class="student"></div>
+        <div class="student unique"></div>
+      </div>
+      <p class="hidden">You are more than a number.</p>
+    </section>
+    <!-- PAGE 3 -->
+     <section class="page" id="page3">
+      <h1>Progress Tracking</h1>
+      <p>Click to improve your performance:</p>
+      <button onclick="increaseScore()">Improve</button>
+      <p id="score">Score: 50%</p>
+      <p>Your value is measurable.</p>
+      <div class="bar"></div>
+      <button onclick="nextPage()">Analyze</button>
+     </section>
+    <!-- PAGE 4 (GLITCH) -->
+     <section class="page glitch" id="page4">
+      <h1>System Error</h1>
+      <p class="glitch-text">OBEY</p>
+      <p class="glitch-text delay">REPEAT</p>
+      <p class="glitch-text delay2">DON'T QUESTION</p>
+      <p class="hidden">You were never the problem.</p>
+      <button onclick="breakSystem()">Override</button>
+     </section>
+    <!-- PAGE 5 -->
+     <section class="page final" id="page5">
+      <h1>You were not meant to be uniform.</h1>
+      <p>Think. Create. Be undefined.</p>
+     </section>
+    <script>
+      let current = 1
+      function nextPage(){
+        let current = document.getElementById("page" + currentPage);
+        if (current) {
+          current.style.display = "none";
+        }
+        currentPage++;
+        let next = document.getElementById("page" + currentPage);
+        if (next) {
+          next.style.display = "block";
+        }
+      }
+      function increaseScore() {
+        let scoreEl = document.getElementById("score");
+        let current = parseInt(scoreEl.innerText.replace(/[^0-9]/g, ""));
+        current += 10;
+        scoreEl.innerText = "Score: " + current + "%";
+        if (current >= 100) {
+          document.body.style.background = "black";
+          document.body.style.color = "white";
+        }
+      }
+      function breakSystem() {
+        document.body.innerHTML =
+        "<h1 style='color:white; background:black; height:100vh; display:flex; align-items:center; justify-content:center;'>You were not meant to be uniform.</h1>";
+      }
+    </script>
+  </body>
+  </html>
