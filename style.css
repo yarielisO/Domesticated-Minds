@@ -1,18 +1,16 @@
 body {
   background: linear-gradient(white, #f0f0f0);
-  transition:background 1s;
+  transition: background 1s;
 }
 .page {
   display: none;
   height: 100vh;
-
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.active {
+.page.active {
   display: flex;
 }
 button {
