@@ -61,7 +61,11 @@ button {
 }
 .hidden {
   opacity: 0;
+  transition: opacity 1s ease;
 }
 .hidden:hover {
+  opacity: 1;
+}
+.show {
   opacity: 1;
 }
