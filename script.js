@@ -17,6 +17,7 @@ function nextPage() {
     if (currentPage === 4) {
         document.querySelector("button").innerText = "OBEY";
     }
+}
     let score = 50;
     function increaseScore() {
         score += 10;
