@@ -16,6 +16,7 @@ button {
   cursor: pointer;
   position: relative;
   z-index: 9999;
+  transition: all 0.3s ease;
 }
 .bar {
   width: 0%;
@@ -29,7 +30,8 @@ button {
   color: red;
 }
 .glitch-text {
-  animation: flicker 0.3s infinite;
+  animation: flicker 0.2s infinite;
+  text-shadow: 2px 0 red, -2px 0 blue;
   position: relative;
 }
 @keyframes glitch {
@@ -65,4 +67,9 @@ button {
 }
 .show {
   opacity: 1;
+}
+button:hover {
+  transform: scale(1.1);
+  background: black;
+  color: white;
 }
