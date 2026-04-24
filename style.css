@@ -1,9 +1,6 @@
 body {
-  margin: 0;
-  background-color: white;
-  font-family: arial, sans-serif;
-  text-align: center;
-  color: black;
+  background: linear-gradient(white, #f0f0f0);
+  transition:background 1s;
 }
 .page {
   display: none;
