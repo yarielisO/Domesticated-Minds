@@ -6,20 +6,20 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-     <section class="page active" id="page1">
+    <section class="page active" id="page1">
       <h1>Welcome, Student</h1>
       <p>Follow the path to success.</p>
-      <button id="begin-btn">Begin</button>
-     </section>
-     <section class="page" id="page2">
+      <button onclick="nextPage()">Begin</button>
+    </section>
+    <section class="page" id="page2">
       <h1>The Ideal Student</h1>
       <ul>
         <li>✔️ Quiet</li>
         <li>✔️ Obedient</li>
         <li>✔️ Efficient</li>
         <li>✔️ Productive</li>
-      </ul>
-      <button onclick="nextPage()">Continue</button>
+      </ul
+        <button onclick="nextPage()">Continue</button>
       <div class="students">
         <div class="student"></div>
         <div class="student"></div>
@@ -27,7 +27,7 @@
       </div>
       <p class="hidden">You are more than a number.</p>
     </section>
-     <section class="page" id="page3">
+    <section class="page" id="page3">
       <h1>Progress Tracking</h1>
       <p>Click to improve your performance:</p>
       <button onclick="increaseScore()">Improve</button>
@@ -35,19 +35,19 @@
       <p>Your value is measurable.</p>
       <div class="bar"></div>
       <button onclick="nextPage()">Analyze</button>
-     </section>
-     <section class="page glitch" id="page4">
+    </section>
+    <section class="page glitch" id="page4">
       <h1>System Error</h1>
       <p class="glitch-text">OBEY</p>
       <p class="glitch-text delay">REPEAT</p>
       <p class="glitch-text delay2">DON'T QUESTION</p>
       <p class="hidden">You were never the problem.</p>
       <button onclick="breakSystem()">Override</button>
-     </section>
-     <section class="page final" id="page5">
+    </section>
+    <section class="page final" id="page5">
       <h1>You were not meant to be uniform.</h1>
       <p>Think. Create. Be undefined.</p>
-     </section>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
