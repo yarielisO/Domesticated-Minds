@@ -8,7 +8,10 @@ body {
 .page {
   display: none;
   height: 100vh;
-  padding-top: 100px;
+  position: absolute;
+  width: 100%
+  top: 0;
+  left: 0;
 }
 .active {
   display: block;
@@ -18,6 +21,8 @@ button {
   padding: 10px 20px;
   margin-top: 20px;
   cursor: pointer;
+  position: relative;
+  z-index: 9999;
 }
 /* Progress bar */
 .bar {
