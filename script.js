@@ -31,6 +31,9 @@ function nextPage() {
 }
 let score = 50;
 function increaseScore() {
+    let beep= document.getElementById("beep");
+    beep.currentTime = 0;
+    beep.play();
     score += 10;
     document.getElementById("score").innerText = "Score: " + score + "%";
     const barWidth = Math.min(score, 100);
