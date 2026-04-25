@@ -40,3 +40,18 @@ function breakSystem() {
             `;
     }, 800);
 }
+let beep;
+function preload(){
+    beep = loadSound('beep.mp3');
+}
+function increaseScore(){
+    score +=10;
+    beep.play();
+}
+function draw(){
+    background(0);
+    for(let i=0;i<particles.length;i++){
+        particles[i].move();
+        particles[i].display();
+    }
+}
