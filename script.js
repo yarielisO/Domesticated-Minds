@@ -7,6 +7,8 @@ function nextPage() {
         next.classList.add("active");
     }if (currentPage === 2) {
         document.querySelector(".hidden").classList.add("show");
+        flashMessage("flash1",3000);
+        flashMessage("flash1",7000);
     }
     if (currentPage === 3) {
         let unique = document.querySelector(".unique");
@@ -48,3 +50,12 @@ setTimeout(()=>{
     document.getElemntById("trait3").innerText="Replacable";
     document.getElemntById("trait4").innerText="Programmable";
 },2500);
+function flashMessage(id,time){
+    setTimeout(()=>{
+        let flash=document.getElementById(id);
+        flash.classList.add("flash");
+        setTimeout(()=>{
+            flash.classList.remove("flash");
+        },80);
+    },time);
+}
