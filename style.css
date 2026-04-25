@@ -100,3 +100,26 @@ h1 {
     box-shadow:0 0 30px #ff44444;
   }
 }
+body: :before{
+  content:"";
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255,255,255,.03) 0px,
+      rgba(255,255,255,.03) 2px,
+      transparent 2px,
+      transparent 4px
+      );
+  pointer-events:none;
+  animation:flicker .15s infinite;
+}
+@keyframes flicker{
+  0%{opacity:.92;}
+  50%{opacity:1;}
+  100%{opacity:.88;}
+}
