@@ -110,8 +110,8 @@ body: :before{
   background:
     repeating-linear-gradient(
       to bottom,
-      rgba(255,255,255,.03) 0px,
-      rgba(255,255,255,.03) 2px,
+      rgba(255,255,255,.08) 0px,
+      rgba(255,255,255,.08) 2px,
       transparent 2px,
       transparent 4px
       );
@@ -133,12 +133,13 @@ body: :before{
   justify-content:center;
   align-items:center;
   background:black;
-  color:white;
+  color:red;
   font-size:60px;
   letter-spacing:4px;
   opacity:0;
   z-index:99999;
   pointer-events:none;
+  text-shadow:0 0 15px red;
 }
 .flash{
   opacity:1;
