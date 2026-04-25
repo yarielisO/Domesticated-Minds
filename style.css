@@ -2,7 +2,8 @@ body {
   background: linear-gradient(-45deg,#ffffff,#e8e8e8,#dcdcdc,#ffffff);
   transition: background 1s;
   background-size:400% 400%;
-  animation: drift 10s infinite;
+  animation: fluorescent 4s infinite,
+    dirft 10s linear infinite;
 }
 .page {
   display: none;
@@ -89,10 +90,13 @@ h1 {
   text-shadow:0 0 35px white;
   animation:flicker 3s infinite;
 }
-@keyframes drift{
-  0%{background-position:0% 50%;}
-  50%{background-position:100% 50%;}
-  100%{background-position:0% 50%;}
+@keyframes fluorescent{
+  0%,16%,19%,100%{opacity:1;}
+  17%{opacity:.82;}
+  18%{opacity:.93;}
+  52%{opacity:.9;}
+  53%{opacity:1;}
+  76%{opacity:.85;}
 }
 @keyframes pulse{
   50%{
@@ -155,4 +159,9 @@ body: :before{
 .question:hover{
   opacity:1;
   transform:scale(1.08);
+}
+@keyframes drift{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
 }
