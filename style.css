@@ -1,6 +1,8 @@
 body {
-  background: linear-gradient(white, #f0f0f0);
+  background: linear-gradient(-45deg,#ffffff,#e8e8e8,#dcdcdc,#ffffff);
   transition: background 1s;
+  background-size:400% 400%;
+  animation: drift 10s infinite;
 }
 .page {
   display: none;
@@ -74,11 +76,17 @@ button {
   opacity: 1;
 }
 button:hover {
-  transform: scale(1.1);
+  transform: scale(1.15) rotate(-1deg);
+  box-shadow
   background: black;
   color: white;
 }
 h1 {
   font-size: 48px;
   letter-spacing: 2px;
+}
+@keyframes drift{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
 }
