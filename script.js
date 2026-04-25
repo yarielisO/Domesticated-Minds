@@ -10,10 +10,10 @@ function nextPage() {
         flashMessage("flash1",3000);
         flashMessage("flash1",7000);
         setTimeout(()=>{
-            document.getElemntById("trait1").innerText="Silent";
-            document.getElemntById("trait2").innerText="Compliant";
-            document.getElemntById("trait3").innerText="Replacable";
-            document.getElemntById("trait4").innerText="Programmable";
+            document.getElementById("trait1").innerText="Silent";
+            document.getElementById("trait2").innerText="Compliant";
+            document.getElementById("trait3").innerText="Replacable";
+            document.getElementById("trait4").innerText="Programmable";
         },700);
     }
     if (currentPage === 3) {
