@@ -14,7 +14,7 @@ function nextPage() {
             document.getElementById("trait2").innerText="Compliant";
             document.getElementById("trait3").innerText="Replacable";
             document.getElementById("trait4").innerText="Programmable";
-        },700);
+        },1000);
     }
     if (currentPage === 3) {
         let unique = document.querySelector(".unique");
