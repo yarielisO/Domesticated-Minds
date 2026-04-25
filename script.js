@@ -27,6 +27,7 @@ function nextPage() {
     if (currentPage === 4) {
         document.querySelector("button").innerText = "OBEY";
         document.body.style.background = "black";
+        document.body.style.animation = "drift 2s linear infinite, fluorescent .8s infinite";
     }
 }
 let score = 50;
