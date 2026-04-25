@@ -37,9 +37,10 @@ button {
   color: red;
 }
 .glitch-text {
-  animation: flicker 0.2s infinite;
-  text-shadow: 2px 0 red, -2px 0 blue;
+  animation: glitch .15s infinite;
+  text-shadow: 3px 0 red, -3px 0 cyan;
   position: relative;
+  font-size:40px;
 }
 @keyframes glitch {
   0% { transform: translate(2px, 0);}
@@ -56,6 +57,7 @@ button {
   background: #ccc;
   border-radius: 50%;
   transition: all 1s ease;
+  animation:pulse 2s infinite;
 }
 .students {
   display: flex;
@@ -77,16 +79,24 @@ button {
 }
 button:hover {
   transform: scale(1.15) rotate(-1deg);
-  box-shadow
+  box-shadow:0 0 20px rgba(255,0,0,.4);
   background: black;
   color: white;
 }
 h1 {
-  font-size: 48px;
+  font-size: 70px;
   letter-spacing: 2px;
+  text-shadow:0 0 35px white;
+  animation:flicker 3s infinite;
 }
 @keyframes drift{
   0%{background-position:0% 50%;}
   50%{background-position:100% 50%;}
   100%{background-position:0% 50%;}
+}
+@keyframes pulse{
+  50%{
+    transform:scale (1.15);
+    box-shadow:0 0 30px #ff44444;
+  }
 }
