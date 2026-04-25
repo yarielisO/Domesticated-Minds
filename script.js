@@ -1,10 +1,8 @@
 let currentPage = 1;
-
 function nextPage() {
     document.getElementById("page" + currentPage).classList.remove("active");
     currentPage++;
     let next = document.getElementById("page" + currentPage);
-    
     if (next) {
         next.classList.add("active");
     }if (currentPage === 2) {
@@ -23,7 +21,6 @@ function nextPage() {
     }
 }
 let score = 50;
-
 function increaseScore() {
     score += 10;
     document.getElementById("score").innerText = "Score: " + score + "%";
