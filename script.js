@@ -65,3 +65,26 @@ function flashMessage(id,time){
         },80);
     },time);
 }
+let unlearnClicks = 0;
+function unlearnReveal(){
+    const message = document.getElementById("finalMessage");
+    const secret = document.getElementById("secretLine");
+    const btn = document.getElementById("unlearnBtn");
+    unlearnClicks++;
+    if(unlearnClicks === 1){
+        btn.innerText = "OBEY";
+        setTimeout(()=>{
+            btn.innerText = "OBE_";
+        },400);
+        setTimeout(()=>{
+            btn.innerText = "UNLEARN";
+        },800);
+        setTimeout(()=>{
+            message.innerText = "Certainty is the first cage.";
+            document.body.classList.add("awaken");
+        },1400);
+    }
+    if(unlearnClicks >= 3){
+        secret.style.opacity = "1";
+    }
+}
