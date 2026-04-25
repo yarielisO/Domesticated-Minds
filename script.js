@@ -14,7 +14,7 @@ function nextPage() {
         let unique = document.querySelector(".unique");
         setTimeout(() => {
             unique.style.background = "#ccc";
-            unique.style.transform = "scale(0.5);
+            unique.style.transform = "scale(0.5)";
             unique.style.opacity = "0.4";
         }, 1000);
     }
