@@ -144,3 +144,15 @@ body: :before{
 .flash{
   opacity:1;
 }
+.choice{
+  display:block;
+  margin:12px auto;
+  width:220px;
+}
+.question{
+  opacity:65;
+}
+.question:hover{
+  opacity:1;
+  transform:scale(1.08);
+}
