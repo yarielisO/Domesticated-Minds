@@ -21,7 +21,7 @@ button {
   margin-top: 20px;
   cursor: pointer;
   position: relative;
-  z-index: 9999;
+  z-index: 2;
   transition: all 0.3s ease;
   border-radius: 20px;
   border: 1px solid black;
@@ -104,7 +104,7 @@ h1 {
     box-shadow:0 0 30px #ff44444;
   }
 }
-body: :before{
+body:before{
   content:"";
   position:fixed;
   top:0;
@@ -121,6 +121,7 @@ body: :before{
       );
   pointer-events:none;
   animation:flicker .15s infinite;
+  z-index:-1;
 }
 @keyframes flicker{
   0%{opacity:.92;}
@@ -154,7 +155,7 @@ body: :before{
   width:220px;
 }
 .question{
-  opacity:65;
+  opacity:.65;
 }
 .question:hover{
   opacity:1;
