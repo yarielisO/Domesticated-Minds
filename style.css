@@ -100,8 +100,8 @@ h1 {
 }
 @keyframes pulse{
   50%{
-    transform:scale (1.15);
-    box-shadow:0 0 30px #ff44444;
+    transform:scale(1.15);
+    box-shadow:0 0 30px #ff4444;
   }
 }
 body:before{
