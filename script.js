@@ -12,7 +12,7 @@ function nextPage() {
         setTimeout(()=>{
             document.getElementById("trait1").innerText="Silent";
             document.getElementById("trait2").innerText="Compliant";
-            document.getElementById("trait3").innerText="Replacable";
+            document.getElementById("trait3").innerText="Replaceable";
             document.getElementById("trait4").innerText="Programmable";
         },1000);
     }
@@ -46,7 +46,7 @@ function increaseScore() {
 function breakSystem() {
     document.body.style.background = "black";
     setTimeout(() => {
-        document.getElementById("page4).classList.remove("active");
+        document.getElementById("page4").classList.remove("active");
             document.getElementById("page5").classList.add("active");
     },800);
 }
