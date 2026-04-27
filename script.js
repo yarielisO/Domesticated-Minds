@@ -1,10 +1,9 @@
 let currentPage = 1;
 function nextPage() {
     document.getElementById("page" + currentPage).classList.remove("active");
-    currentPage++;
-    let next = document.getElementById("page" + currentPage);
-    if (next) {
-        next.classList.add("active");
+    if(currentPage < 5){
+        currentPage++;
+        document.getElementById("page" + currentPage).classList.add("active");
     }
     if (currentPage === 2) {
         document.querySelector(".hidden").classList.add("show");
@@ -26,7 +25,6 @@ function nextPage() {
         }, 1000);
     }
     if (currentPage === 4) {
-        document.querySelector("button").innerText = "OBEY";
         document.body.style.background = "black";
         document.body.style.animation = "drift 2s linear infinite, fluorescent .8s infinite";
     }
