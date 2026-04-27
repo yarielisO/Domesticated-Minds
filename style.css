@@ -21,7 +21,7 @@ button {
   margin-top: 20px;
   cursor: pointer;
   position: relative;
-  z-index: 2;
+  z-index: 9999;
   transition: all 0.3s ease;
   border-radius: 20px;
   border: 1px solid black;
@@ -121,7 +121,7 @@ body:before{
       );
   pointer-events:none;
   animation:flicker .15s infinite;
-  z-index:-1;
+  z-index:0;
 }
 @keyframes flicker{
   0%{opacity:.92;}
