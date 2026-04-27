@@ -3,7 +3,7 @@ body {
   transition: background 1s;
   background-size:400% 400%;
   animation: fluorescent 4s infinite,
-    dirft 10s linear infinite;
+    drift 10s linear infinite;
 }
 .page {
   display: none;
@@ -155,7 +155,7 @@ body:before{
   width:220px;
 }
 .question{
-  opacity:.65;
+  opacity:0.65;
 }
 .question:hover{
   opacity:1;
