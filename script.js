@@ -38,7 +38,8 @@ function increaseScore() {
     document.getElementById("score").innerText = "Score: " + score + "%";
     const barWidth = Math.min(score, 100);
     document.querySelector(".bar").style.width = barWidth + "%";
-    if (score === 80){
+    if (score >= 80 && !runnerTriggered){
+        runnerTriggered = true;
         setTimeout(()=>{
             let giggle = document.getElementById("giggle");
             giggle.volume = 0.15;
