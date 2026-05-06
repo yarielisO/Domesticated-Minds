@@ -30,7 +30,7 @@ function nextPage() {
     }
 }
 let score = 50;
-let runnerTriggered = flase;
+let runnerTriggered = false;
 function increaseScore() {
     let beep= document.getElementById("beep");
     beep.currentTime = 0;
