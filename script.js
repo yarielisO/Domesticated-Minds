@@ -39,14 +39,15 @@ function increaseScore() {
     const barWidth = Math.min(score, 100);
     document.querySelector(".bar").style.width = barWidth + "%";
     if (score === 80){
-        let giggle = document.getElementById("giggle");
-        giggle.volume = 0.15;
-        giggle.currentTime = 0;
-        giggle.play();
         setTimeout(()=>{
-            document.getElementById("runner")
-            .classList.add("run");
-        }, 400);
+            let giggle = document.getElementById("giggle");
+            giggle.volume = 0.15;
+            giggle.currentTime = 0;
+            giggle.play();
+        }, 300);
+        setTimeout(()=>{
+            document.getElementById("runner").classList.add("run");
+        }, 900);
     }
     if (score >= 100) {
         document.body.style.background = "black";
