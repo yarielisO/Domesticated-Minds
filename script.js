@@ -94,3 +94,6 @@ function unlearnReveal(){
         secret.style.opacity = "1";
     }
 }
+function startTest(){
+    document.getElementById("startScreen").style.display = "none";
+}
