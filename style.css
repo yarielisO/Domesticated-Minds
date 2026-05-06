@@ -189,3 +189,36 @@ body:before{
   transition:3s;
   animation:flicker 2s infinite;
 }
+#runner{
+  position:fixed;
+  bottom:80px;
+  left:-60px;
+  font-size:34px;
+  color:red;
+  opacity:0;
+  z-index:9999;
+  pointer-events:none;
+}
+.run{
+  opacity:1;
+  animation:escape 4s linear forwards;
+}
+@keyframes escape{
+  0%{
+    left:-60px;
+    transform:translateY(0);
+  }
+  20%{
+    transform:translateY(-10px);
+  }
+  40%{
+    transform:translateY(8px);
+  }
+  60%{
+    transform:translateY(-8px);
+}
+  100%{
+    left:110%;
+    transform:translateY(0);
+  }
+}
