@@ -191,9 +191,9 @@ body:before{
 }
 #runner{
   position:fixed;
-  bottom:80px;
-  left:-60px;
-  font-size:34px;
+  bottom:120px;
+  left:-80px;
+  font-size:60px;
   color:red;
   opacity:0;
   z-index:9999;
@@ -201,7 +201,7 @@ body:before{
 }
 #runner.run{
   opacity:1;
-  animation:escape 4s linear forwards;
+  animation:escape 8s linear forwards;
 }
 @keyframes escape{
   0%{
