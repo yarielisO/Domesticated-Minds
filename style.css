@@ -201,7 +201,7 @@ body:before{
 }
 #runner.run{
   opacity:1;
-  animation:escape 8s linear forwards;
+  animation:escape 4s linear forwards;
 }
 @keyframes escape{
   0%{
